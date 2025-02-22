@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Світ зброї</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Світ зброї</h1>
+        <p>Дізнайтесь про найвідоміші види зброї в історії людства</p>
+    </header>
+
+    <section class="filters">
+        <button data-filter="all">Усі</button>
+        <button data-filter="firearm">Вогнепальна</button>
+        <button data-filter="melee">Холодна</button>
+        <button data-filter="ancient">Стародавня</button>
+        <button data-filter="explosive">Вибухова</button>
+    </section>
+
+    <main class="weapon-grid">
+        <div class="weapon-card hidden" data-type="firearm">
+            <img src="https://zbroya.store/image/cache/catalog/products/11500001/0-1600x1060.jpg" alt="Пістолет">
+            <h2>Пістолет</h2>
+            <p>Компактна вогнепальна зброя для ближнього бою.</p>
+            <button class="details-btn">Детальніше</button>
+        </div>
+        <div class="weapon-card hidden" data-type="melee">
+            <img src="https://images.prom.ua/2703151347_w600_h600_2703151347.jpg" alt="Меч">
+            <h2>Меч</h2>
+            <p>Класична холодна зброя середньовічних воїнів.</p>
+            <button class="details-btn">Детальніше</button>
+        </div>
+        <div class="weapon-card hidden" data-type="firearm">
+            <img src="https://static.espreso.tv/uploads/article/2554363/images/im-rifle-lrt-3_ictv.png" alt="Гвинтівка">
+            <h2>Гвинтівка</h2>
+            <p>Далекобійна зброя для точної стрільби.</p>
+            <button class="details-btn">Детальніше</button>
+        </div>
+        <div class="weapon-card hidden" data-type="ancient">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ15VABzy8xO-fc-6BvjCd1ImCEHL3NcdN7rg&s" alt="Лук">
+            <h2>Лук</h2>
+            <p>Стародавня зброя для стрільби стрілами.</p>
+            <button class="details-btn">Детальніше</button>
+        </div>
+        <div class="weapon-card hidden" data-type="explosive">
+            <img src="https://sprotyv.mod.gov.ua/storage/2023/05/F1.jpg" alt="Граната">
+            <h2>Граната</h2>
+            <p>Ручна вибухова зброя для ураження груп ворогів.</p>
+            <button class="details-btn">Детальніше</button>
+        </div>
+        <div class="weapon-card hidden" data-type="melee">
+            <img src="https://podarki-men.com.ua/wp-content/uploads/2023/10/1652874236153293-600x600.jpg" alt="Сокира">
+            <h2>Сокира</h2>
+            <p>Потужна холодна зброя для рубання.</p>
+            <button class="details-btn">Детальніше</button>
+        </div>
+        <div class="weapon-card hidden" data-type="firearm">
+            <img src="https://mil.in.ua/wp-content/uploads/2017/12/PKM-z-myakym-korobom.jpg" alt="Кулемет">
+            <h2>Кулемет</h2>
+            <p>Автоматична зброя для масового ураження.</p>
+            <button class="details-btn">Детальніше</button>
+        </div>
+    </main>
+
+    <div class="modal" id="weapon-modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Світ зброї</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
